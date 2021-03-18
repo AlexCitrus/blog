@@ -1,0 +1,17 @@
+<h1>New Article</h1>
+<%# <p>Find me in app/views/articles/new.html.erb</p> %>
+<%= form_with url: create_article_path do |f| %>
+
+<p>
+    <%= f.label :title %> </br>
+    <%= f.text_field :title %>
+</p>
+<p>
+    <%= f.label :content %> </br>
+    <%= f.text_field :content %>
+</p>
+<p>
+    <%= f.submit %>
+</p>
+
+<% end %>
